@@ -1,0 +1,69 @@
+body{
+  background-color: #02010a;
+}
+.contenido{
+  width: 900px;
+  margin: 0 auto;
+}
+.central{
+  background: #82c3a6;
+}
+header {
+  background: #5b7989;
+	border-radius: 10px;
+  color: white;
+  text-shadow: 2px,#02010a;
+  overflow:hidden;
+}
+header h1{
+  font-family: 'Dancing Script';
+  float:left;
+}
+header nav{
+  float:right;
+}
+header nav a{
+  font-family: 'Dancing Script';
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding:30px 20px;
+	line-height:normal;
+}
+.central #imagen1 img{
+  width: 100%;
+}
+.contenedor{
+  display: flex;
+  flex-direction: row;
+  background: #d5c75f;
+}
+.contenedor > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
+}
+.contenedor div img{
+  max-width: 90%;
+  max-height: 90%;
+  border: 1px solid;
+}
+figcaption{
+  text-align: center;
+  font-style: italic;
+  text-decoration:underline;
+  font-family: 'Dancing Script';
+  font-size: 20px;
+}
+#imagen2 img:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 0px 0px #82c3a6;
+  border: 0px solid;
+}
+#imagen3 img:hover{
+  transform: translate(20px, -5px);
+  box-shadow: 2px 0px 0px #82c3a6;
+  border: 0px solid;
+}
