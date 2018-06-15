@@ -1,3 +1,4 @@
+
 body{
   background-color: #02010a;
 }
@@ -10,7 +11,8 @@ body{
 }
 header {
   background: #5b7989;
-	border-radius: 10px;
+	border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   color: white;
   text-shadow: 2px,#02010a;
   overflow:hidden;
@@ -25,12 +27,14 @@ header nav{
 header nav a{
   font-family: 'Dancing Script';
   display: inline-block;
-  text-decoration: none;
   color: white;
   font-size: 20px;
   padding:30px 20px;
 	line-height:normal;
 }
+header nav .posisicion{
+text-decoration: none;
+ }
 .central #imagen1 img{
   width: 100%;
 }
@@ -67,3 +71,90 @@ figcaption{
   box-shadow: 2px 0px 0px #82c3a6;
   border: 0px solid;
 }
+footer{
+  background: #C6d5c5;
+	border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: black;
+  text-shadow: 2px,#02010a;
+  overflow:hidden;
+}
+.contenedorf{
+  display: flex;
+  flex-direction: row;
+}
+.contenedorf div {
+  width: 225px;
+  font-family: 'Dancing Script';
+  float:left;
+  padding-right:20px;
+  padding-left: 20px;
+  }
+  .contenedorf h3{
+  font-size: 20px;
+}
+.contenedorf img{
+  max-width: 12%;
+  max-height: 12%;
+  }
+  @media screen and (max-width:900px) {
+    .contenido{
+      width: 100%;
+    }
+    header{
+      width: 100%;
+    }
+    header h1{
+      float: none;
+      text-align: center;
+    }
+    header nav{
+      float:none;
+      text-align: center;
+    }
+    .central{
+      width: 100%;
+    }
+    .central figure{
+      width: 100%;
+    }
+    .central figure img{
+      max-width: 80%;
+      max-height: 80%;
+    }
+    .imgcentral{
+      width: 100%;
+    }
+    .central img{
+      max-width: 90%;
+      max-height: 90%;
+    }
+    .secundaria{
+      width: 100%;
+    }
+    .contenedor{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .contenedor div{
+      width: 100%;
+    }
+    .contenedorf{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .contenedor div img{
+      max-width: 85%;
+      max-height: 85%;
+      padding-right: 10%;
+      border: 0px solid;
+      }
+    footer{
+      width: 100%;
+    }
+    footer div{
+      width: 100%;
+    }
+  }
