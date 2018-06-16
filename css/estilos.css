@@ -43,13 +43,45 @@ text-decoration: none;
   flex-direction: row;
   background: #d5c75f;
 }
+.galeria1f{
+  display: flex;
+  flex-direction: row;
+  background: #d5c75f;
+}
+.galeria2f{
+  display: flex;
+  flex-direction: row;
+  background: #d5c75f;
+}
 .contenedor > div {
 	text-align: center;
 	padding: 10px;
 	margin: 10px;
 	width: 50%;
 }
+.galeria1f > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 33.3%;
+}
+.galeria2f > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 33.3%;
+}
 .contenedor div img{
+  max-width: 90%;
+  max-height: 90%;
+  border: 1px solid;
+}
+.galeria1f div img{
+  max-width: 90%;
+  max-height: 90%;
+  border: 1px solid;
+}
+.galeria2f div img{
   max-width: 90%;
   max-height: 90%;
   border: 1px solid;
@@ -70,6 +102,18 @@ figcaption{
   transform: translate(20px, -5px);
   box-shadow: 2px 0px 0px #82c3a6;
   border: 0px solid;
+}
+#p1 img{
+	-webkit-filter:blur(10px);
+	filter: blur(10px);
+}
+#p2, #p4, #p6 img{
+	-webkit-filter:grayscale(100%);
+	filter: grayscale(100%);
+}
+#p3 img{
+	-webkit-filter:sepia(90%);
+	filter: sepia(90%);
 }
 footer{
   background: #C6d5c5;
@@ -151,6 +195,44 @@ footer{
       padding-right: 10%;
       border: 0px solid;
       }
+      .galeria1f{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .galeria1f div{
+        width: 100%;
+      }
+      .galeria1f{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .galeria1f div img{
+        max-width: 85%;
+        max-height: 85%;
+        padding-right: 10%;
+        border: 0px solid;
+        }
+        .galeria2f{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+        .galeria2f div{
+          width: 100%;
+        }
+        .galeria2f{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+        .galeria2f div img{
+          max-width: 85%;
+          max-height: 85%;
+          padding-right: 10%;
+          border: 0px solid;
+          }
     footer{
       width: 100%;
     }
