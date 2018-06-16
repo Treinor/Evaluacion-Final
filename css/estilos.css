@@ -16,6 +16,8 @@ header {
   color: white;
   text-shadow: 2px,#02010a;
   overflow:hidden;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 header h1{
   font-family: 'Dancing Script';
@@ -141,6 +143,18 @@ footer{
   max-width: 12%;
   max-height: 12%;
   }
+  @keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
+
+  60%  {
+    margin-top: -5%;
+  }
+  100%  {
+    margin-top: 0%;
+  }
+}
   @media screen and (max-width:900px) {
     .contenido{
       width: 100%;
